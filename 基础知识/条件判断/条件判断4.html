@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--给一个元素加上key值，会让vue确定这是vue界面唯一的元素-->
+   <div v-if="show" key="username">
+       用户名:<input >
+   </div>
+   <div v-else="show" key="password">
+       邮箱:<input >
+   </div>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            show:false
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--条件判断
+    1。v-if 和 v-show 所在div的展示 都是取决于后面的js表达式的真假
+    2.v-if 不展示和展示是做了dom的删除和添加操作
+    3.v-show 是在所在的div里面添加display:none;在dom上依然存在
+    4.如果频繁的对dom进行操作，明显v-show的性能更高。
+    -->
+
+    <div id="app">
+        <div v-if="show">{{message}}</div>
+        <div v-show="show">{{message}}</div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            show:false,
+            message:'213',
+        }
+    })
+</script>
+</html>
