@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!--这时的styleObj是一个对象，style里面显示额的内容就是对象里面的数据-->
+        <div :style="styleObj" @click="handleDivClick">gaoliang</div>
+
+
+        <div :style="[styleObj,{fontSize:'20px'}]" @click="handleDivClick">gaoliang</div>
+
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+    var vue = new Vue({
+        el:'#app',
+        data:{
+            styleObj:{
+                color:"black"
+            }
+        },
+        methods:{
+            handleDivClick:function () {
+                this.styleObj.color = this.styleObj.color === 'black' ? 'red' : 'black';
+            }
+
+        }
+    })
+</script>
+</html>

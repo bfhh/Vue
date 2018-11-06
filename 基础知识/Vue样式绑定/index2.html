@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <title>样式绑定</title>
     <style>
-        .actived{
+        .activated{
             color:red;
         }
     </style>
 </head>
 <body>
-    <div id="app" :class="{actived:isActived}" @click="handleDivClick">hello</div>
+<!--class可以和一个数组绑定，这个class显示的是一个变量绑定的内容-->
+    <div id="app" :class="[activated]" @click="handleDivClick">hello</div>
 </body>
 <script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
 <script>
     var vue = new Vue({
         el:'#app',
         data:{
-            isActived:false,
+            activated:"",
         },
         methods:{
             handleDivClick:function () {
-                this.isActived = !this.isActived
+               this.activated = this.activated === "activated" ? "" :"activated";
             }
         }
     })
