@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app2">
+    <input type="text" v-model="inputValue">
+    <button v-on:click="handButtonClick">提交</button>
+    <ul>
+        <todo-item v-bind:content="item" v-for="item in list"></todo-item>
+    </ul>
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+
+    //  var TodoItem = {}  定义局部的组件
+    // components:{TodoItem:TodoItem}局部组件注册到Vue中生效
+
+
+
+    var TodoItem = {
+            props:['content'],
+            template:"<li>{{content}}</li>"
+        };
+
+    var app2 = new Vue({
+        el:'#app2',
+        components:{
+            TodoItem:TodoItem,
+        },
+        data:{
+            list:[],
+            inputValue:''
+        },
+        methods:{
+            handButtonClick:function () {
+                this.list.push(this.inputValue);
+                this.inputValue=''
+            }
+
+
+        }
+    })
+</script>
+</html>

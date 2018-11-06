@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<div id="app1">{{fullName}}</div>-->
+
+    <!--这种方式页面含有逻辑，为了让页面只做展示，页面原则上最好只做显示-->
+    <!--<div id="app1">{{firstName + ' ' + lastName }} {{age}}</div>-->
+
+
+    <div id="app1">{{fullName()}} {{age}}</div>
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+    //目的，让页面显示 firstName 和 lastName 拼接后的名字
+    //     1.当firstName 和 lastName 发生改变的时候 拼接后的名字也要改变
+
+
+    //三种方式都可以实现
+    //computed 会有缓存机制，只要属性方法涉及到的变量不发生改变的话，即使其他变量比如这里的age发生改变，方法不会再次执行，而使用缓存机制
+
+    //methods :其他变量发生改变方法就会执行,
+    
+    //watch 监听器的也能实现，效果和computed差不多，但是代码量大，不简洁
+
+    var vm = new Vue({
+
+        el:'#app1',
+        data:{
+            firstName:'gao',
+            lastName:'liang',
+            age:27
+        },
+
+         //计算属性的值也是一个方法
+        // computed:{
+        //     fullName: function () {
+        //           console.log('计算属性计算一次');
+        //         return this.firstName + '' + this.lastName;
+        //     }
+        // },
+        
+        // methods:{
+        //    fullName:function () {
+        //        console.log('methods调用一次');
+        //        return this.firstName + '' + this.lastName;
+        //
+        //    }
+        // }
+
+    })
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<div id="app1">{{fullName}}</div>-->
+
+    <div id="app1">{{fullName()}} {{age}}</div>
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+    //三种方式都可以实现
+    //computed 会有缓存机制，只要属性方法涉及到的变量不发生改变的话，即使其他变量比如这里的age发生改变，方法不会再次执行，而使用缓存机制
+
+    //methods :其他变量发生改变方法就会执行,
+    
+    //watch 监听器的也能实现，效果和computed差不多，但是代码量大，不简洁
+
+    var vm = new Vue({
+
+        el:'#app1',
+        data:{
+            firstName:'gao',
+            lastName:'liang',
+            fullName:'gao liang',
+            age:27
+        },
+        watch:{
+            firstName: function () {
+                this.fullName = this.firstName + " " + this.lastName;
+            },
+
+            lastName: function () {
+                this.fullName = this.firstName + " " + this.lastName;
+            }
+
+
+        }
+
+
+    })
+</script>
+</html>

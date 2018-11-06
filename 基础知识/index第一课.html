@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>helloWorld</title>
+</head>
+<body>
+<div id="app1">
+    {{content}}
+</div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+//el 决定vue管理的范围
+//2.vue.$data是一个对象
+    var vue = new Vue({
+        el:"#app1",
+        data:{
+            content:"helloWorld"
+        },
+    });
+
+    setTimeout(function () {
+        vue.$data.content = "你好"
+    },2000);
+
+
+</script>
+</html>

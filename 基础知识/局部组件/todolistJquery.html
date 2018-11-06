@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="input" type="text">
+    <button id="btn">提交</button>
+    <ul id="ul" >
+    </ul>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function Page() {}
+    $.extend(Page.prototype,{
+        init:function () {
+            this.bindEvents()
+        },
+        bindEvents:function () {
+            alert(1)
+            var btn = $("#btn");
+            btn.on('click',$.proxy(this.handleBtnClick,this))
+        },
+        handleBtnClick:function () {
+            var inputElem = $("#input");
+            var inputValue = inputElem.val();
+            var ulElem = $("#ul");
+            ulElem.append('<li>'+inputValue+'</li>');
+            inputElem.val('');
+
+        }
+    });
+    var page = new Page();
+    page.init();
+</script>
+</html>

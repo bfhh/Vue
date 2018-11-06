@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app2" >
+        <li v-for="item in arr">{{item.text}}</li>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+    var app2 = new Vue({
+        el:"#app2",
+        data:{
+            arr:[
+                {text:'学习1'},
+                {text:'学习2'},
+                {text:'学习3'}
+            ]
+        }
+    })
+
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+v-on:表示给当前的元素 绑定一个事件  click 绑定点击事件  handButtonClick表示点击事件出发的函数
+-->
+<div id="app2">
+    <input type="text" v-model="inputValue">
+    <button v-on:click="handButtonClick">提交</button>
+    <ul >
+        <li v-for="item in list">{{item}}</li>
+    </ul>
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script><script src="./vue.js"></script>
+<script>
+    //Vue的
+    //   1 el:决定Vue实例对象管理dom区域
+    //   2 data:数据管理
+    //   3 methods:方法管理
+    //   4 mvvm设计模式:通过改变Vue里面的数据，Vue底层会重新渲染dom(比如双向绑定机制),从而改变dom里面的显示的数据
+    var app2 = new Vue({
+        el:'#app2',
+        data:{
+            list:[],
+            inputValue:''
+        },
+        methods:{
+            handButtonClick:function () {
+                this.list.push(this.inputValue);
+                this.inputValue=''
+            }
+
+
+        }
+    })
+</script>
+</html>

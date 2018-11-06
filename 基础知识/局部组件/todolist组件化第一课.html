@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+v-on:表示给当前的元素 绑定一个事件  click 绑定点击事件  handButtonClick表示点击事件出发的函数
+v-bind:content="item" 将这个元素节点的 content特性和 Vue 实例的 item 值保持一致”。
+,向这个组件传入(绑定)一个变量content，值绑定为item的值，组件通过 props:['content'] 接收这个数据变量
+
+-->
+<div id="app2">
+    <input type="text" v-model="inputValue">
+    <button v-on:click="handButtonClick">提交</button>
+    <ul >
+         <todo-item v-bind:content="item" v-for="item in list"></todo-item>
+    </ul>
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+    // mvvm
+    // m 指的是model层，Vue的数据
+    // v是指dom的视图
+    // vm是Vue的核心引擎
+    // vm可以监听到m的变化，对dom进行重新渲染 也可以监听到视图的一些事件，从何操作Vue的方法，方法又会改变Vue的数据，数据改变
+    // 再次对view页面重新渲染
+
+    //定义组件
+    Vue.component("todo-item", {
+            props:['content'],
+            template:"<li>{{content}}</li>"
+        }
+    );
+
+    var app2 = new Vue({
+        el:'#app2',
+        data:{
+            list:[],
+            inputValue:''
+        },
+        methods:{
+            handButtonClick:function () {
+                this.list.push(this.inputValue);
+                this.inputValue=''
+            }
+
+        }
+    })
+</script>
+</html>

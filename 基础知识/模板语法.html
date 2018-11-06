@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+// {{message}} 里面的message  v-text后面的message v-html后面的message 都是js表达式 ,里面可以写js
+// {{ }} 和 v-text 不会解析绑定数据的html,会直接转义成内容
+// v-html 会解析绑定数据的html 有h1的显示
+    <div id="app1">
+        <div>{{message}}</div>
+        <div v-text="message + 'abc'"></div>
+        <div v-html="message + 'abc'"></div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+    var vm  = new Vue({
+        el:'#app1',
+        data:{
+            message:'<h1>21131312</h1>'
+        }
+    })
+</script>
+</html>

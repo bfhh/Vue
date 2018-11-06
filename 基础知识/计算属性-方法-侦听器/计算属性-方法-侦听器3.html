@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!--当解析到 Vue的模板fullName的时候，首先去data属性去找fullName，找不到就会去计算属性中去寻找fullName
+    默认情况下会调用get方法,
+    当fullName的值发生改变时会调用set()方法，set()里面修改了get()依赖的值，那么get()就会被再次调用
+    -->
+
+    <div id="app1">{{fullName}}</div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+
+    var vm = new Vue({
+        el:'#app1',
+        data:{
+            firstName:'gao',
+            lastName:'liang',
+
+        },
+
+        // computed:{
+        //     fullName: function () {
+        //         return this.firstName + " " + this.lastName;
+        //     }
+        // }
+
+        computed:{
+            fullName:{
+                get:function () {
+                    return this.firstName + " " + this.lastName;
+                },
+                set:function (value) {
+                    var arr = value.split(" ");
+                    this.firstName = arr[0];
+                    this.lastName = arr[1];
+                }
+            }
+
+        }
+    })
+</script>
+</html>
