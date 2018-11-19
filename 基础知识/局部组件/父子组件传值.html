@@ -1,0 +1,40 @@
+<!--父组件向子组件传值-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root">
+    <!--加了:表示后面"" 里面 的是一个js表达式而不是一个字符串0-->
+    <counter :count="0"></counter>
+    <counter :count="1"></counter>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+    var counter = {
+        // 子组件接受父组件传递的值
+        props: ['count'],
+        data: function () {
+            return {
+                number: this.count
+            }
+        },
+        template: '<div @click="handleClick">{{number}}</div>',
+        methods: {
+            handleClick: function () {
+                this.number ++;
+            }
+        }
+    };
+
+    var vm = new Vue({
+        el: '#root',
+        components: {
+            counter: counter,
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <li v-for="(item, index) of list" :key="item.id ">
+            {{item.id}}--{{item.text}}
+        </li>
+        <div @click = "handleClickDiv">更新元素</div>
+
+    </div>
+
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+
+    //vue 如果你想改变数组，数组改变页面跟着变化，只有vue提供的7个变异方法 push .pop等
+    //改变一个数组的中间的元素元素
+    //     vm.list.splice(1,1,{'id':'33',text:'第一名'});
+    //     第一个1代表 从下标哪里开始删
+    //     第二个1代表删除几个元素
+    //     第三个代表中间插入的元素
+
+
+    // 通过改变数组改变页面的数据
+    //     1.vue提供的其中方法
+    //     2.改变的数组的引用 vue.list = 一个新的数组
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            list:[
+                {'id':1,text:'第一名'},
+                {'id':2,text:'第二名'},
+                {'id':3,text:'第三名'},
+            ]
+        },
+        methods:{
+            handleClickDiv: function () {
+                this.list.splice(1,1,{'id':'33',text:'第33名'});
+            }
+        }
+    })
+</script>
+</html>

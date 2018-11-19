@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app1">
+
+    <table>
+        <row is="row"></row>
+    </table>
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+
+       //  子组件要绑定data数据时，必须用一个函数返回，不能是单纯的定义一个固定的对象数据
+       // 1。因为子组件可能在不同的地方会被调用，一个子组件可能会被调用多次，每个子组件都应该有自己的数据，而不应该共享一套数据
+
+    Vue.component('row',{
+        data:function(){
+            return {
+                content:'this is a row'
+            }
+        },
+        template:'<tr><td>{{content}}</td></tr>'
+    });
+    var vm = new Vue({
+        el:'#app1',
+
+    })
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+
+        <!--值-属性名-索引-->
+        <li v-for="(item, key ,index) of list" :key="item.id ">
+            {{item}}--{{key}}--{{index}}
+        </li>
+        <div @click="handleObj">更换对象</div>
+        <div @alick = "changeObj">改变对象</div>
+    </div>
+
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+<script>
+
+    //改变对象的数据改变页面
+    // 1.改变对象已经存在的属性 vm.list.name = 'go' 可以改变dom里面的数据
+    // 2.改变对象的引用 vm.list = 一个新的对
+    // 注意给一个对象添加属性，虽然对象发生改变，但是页面的数据不会发生改变
+
+
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            list:{
+                name:'gaoliang',
+                age:18,
+                gender:'male',
+            }
+        },
+        methods:{
+            handleObj:function () {
+                this.list = {
+                    name:'美女',
+                    age:18,
+                    gender:'female',
+                }
+            },
+        }
+    })
+</script>
+</html>
