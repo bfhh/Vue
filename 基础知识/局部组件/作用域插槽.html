@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域插槽</title>
+</head>
+<body>
+    <div id="root">
+        <child>
+            <template slot-scope = "props">
+                <h1>{{props.item}}</h1>
+            </template>
+        </child>
+    </div>
+
+</body>
+<script src="../vue.js"></script>
+<script>
+    Vue.component('child',{
+        data:function () {
+            return{
+                list:[1,2,3,4],
+            }
+        },
+        template:`<div>
+                    <slot v-for="item of list" :item = item>
+                    </slot>
+                  </div>`
+    });
+    var vm = new Vue({
+        el:'#root',
+    })
+</script>
+</html>

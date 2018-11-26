@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+1、父组件中使用子组件的模板，子组件中<child>中绑定的事件是一个自定义事件，不是原生事件，不会触发父组件中的methods
+    解决方法2.
+        1.首先在子组件的元素绑定原生事件
+        2.子组件通过this.$emit触发父组件的自定义事件
+-->
+<div id="app">
+    <child @click="handleFunc"></child>
+</div>
+</body>
+<script src="../vue.js"></script>
+<script>
+
+    Vue.component('child', {
+        template: '<div @click="handleFunc">Child</div>',
+        methods: {
+            handleFunc: function () {
+                alert('子组件')
+                this.$emit('click')
+            }
+        }
+    });
+    var vm = new Vue({
+        el: '#app',
+        methods: {
+            handleFunc: function () {
+                alert('父组件');
+            }
+        }
+    })
+</script>
+</html>
+
+

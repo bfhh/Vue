@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中得css动画原理</title>
+    <link rel="stylesheet" type="text/css" href="../animate.css">
+    <style>
+
+        /*
+            过度和动画一起使用
+            问题:animated动画也有默认的执行事件，这里指定transition: opacity 3s;哪个时间为准
+                方法1.使用type = "transition" 指定使用过度时间作为动画总时长
+                方法2：自定义总动画的播放时长 :duration= "10000"  10000毫秒
+        */
+
+
+        .fade-enter,.fade-leave-to{
+            opacity:0;
+        }
+        .fade-enter-active,.fade-leave-active{
+            transition: opacity 3s;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--
+        1.   2.html中虽然可以成功使用amimate.css,但是在刷新页面和第一次进入页面时看不到进入时动画的效果。
+                    添加appear-active-class = "animated bounce"
+                    添加appear
+    -->
+
+    <transition
+            :duration="10000"
+            type = "transition"
+            name="fade"
+            appear
+            appear-active-class = "animated bounce    fade-enter-active"
+            enter-active-class = "animated bounce     fade-leave-active"
+            leave-active-class = "animated bounceOut"
+    >
+        <div v-show="show">hello world</div>
+    </transition>
+    <button @click="handleClick">切换</button>
+</div>
+</body>
+<script src="../vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            show:true,
+        },
+        methods:{
+            handleClick:function () {
+                this.show = !this.show;
+            }
+        }
+    })
+</script>
+</html>

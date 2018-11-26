@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="root">
+
+        <!-- 插槽的使用,父组件需要向子组件传递很多的内容时使用插槽
+            1.在子组件的dom中所以写一个dom元素就是往子组件中传入内容，子组件中的template中使用<slot>
+            2.子组件的dom中使用slot属性标记插槽，子组件中可以通过name对应dom中的插槽
+        -->
+        <child>
+           <div slot="header">header</div>
+           <div slot="footer">footer</div>
+        </child>
+    </div>
+</body>
+<script src="../vue.js"></script>
+<script>
+    Vue.component('child',{
+        template:`
+            <div>
+                <slot name="header"></slot>
+                <div>content</div>
+                <slot name="footer"></slot>
+            </div>`
+    });
+    var vm = new Vue({
+        el:'#root'
+    })
+</script>
+</html>

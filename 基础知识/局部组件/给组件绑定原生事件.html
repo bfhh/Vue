@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+1、父组件中使用子组件的模板，子组件中<child>中绑定的事件是一个自定义事件，不是原生事件，不会触发父组件中的methods
+    解决方法1.在组件中的时间后面添加一个修饰符native,自定义事件就会变成父组件上的原生事件
+-->
+    <div id="app">
+        <child @click.native= "handleFunc"></child>
+    </div>
+</body>
+<script src="../vue.js"></script>
+<script>
+
+    Vue.component('child',{
+        template:'<div>Child</div>',
+    });
+    var vm = new Vue({
+        el:'#app',
+        methods:{
+            handleFunc:function () {
+                alert(1);
+            }
+        }
+    })
+</script>
+</html>
+
+

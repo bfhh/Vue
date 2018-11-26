@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的列表循环</title>
+    <style>
+        .v-enter,.v-leave-to {
+            opacity: 0;
+        }
+        .v-enter-active,.v-leave-active {
+            transition: opacity 2s;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+
+        <!--
+            实际上裂列表中的<transition-group>最终会转化成这种效果，将列表的过渡转化为单个元素的过渡
+             <transition>
+                <div>hello</div>
+             </transition>
+             <transition>
+                <div>hello</div>
+             </transition>
+             <transition->
+                <div>hello</div>
+             </transition>
+             ...
+
+        -->
+
+        <transition-group>
+        <div v-for="(item,index) of list" :key="item.id">
+            {{item.title}}
+        </div>
+        </transition-group>
+        <button  @click="handleClick">add</button>
+    </div>
+
+</body>
+<script src="../vue.js"></script>
+<script>
+    let count = 1;
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            list:[],
+        },
+        methods:{
+            handleClick:function () {
+                this.list.push({
+                    id: count++,
+                    title:'hello'
+                })
+            }
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中得css动画原理</title>
+    <link rel="stylesheet" type=="text/css" href="../animate.css">
+    <style>
+        @keyframes bounce-in {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .active{
+            transform-origin: left center;
+            animation: bounce-in 1s;
+        }
+        .leave{
+            transform-origin: left center;
+            animation: bounce-in 1s reverse;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <!--
+        1.vue中不指定动画的class名字 不适用 name= "一个名字" 默认是 v-enter-active, v- 等等的形式
+        2.按照规则指定name name="fade"  隐藏的动画的class为 fade-leave-active等等
+        3.自己自定义名字   enter-active-class="avtive" , enter-leave-class="leave"  在style中使用.active 和 .leave即可
+    -->
+
+    <transition
+        name="fade"
+        enter-active-class = "active"
+        leave-active-class = "leave"
+    >
+        <div v-if="show">hello world</div>
+    </transition>
+    <button @click="handleClick">切换</button>
+</div>
+</body>
+<script src="../vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            show:true,
+        },
+        methods:{
+            handleClick:function () {
+                this.show = !this.show;
+            }
+        }
+    })
+</script>
+</html>

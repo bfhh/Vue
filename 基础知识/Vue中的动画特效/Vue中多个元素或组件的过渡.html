@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .v-enter,.v-leave-to{
+            opacity: 0;
+        }
+        .v-enter-active,.v-leave-active{
+            transition: opacity 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--    1. Vue在transition标签中定义的mode属性值   ut-in 和 in-out 定义了两个元素的过渡效果
+                2.没有出现过渡效果是因为Vue对Dom元素的复用,需要给不同的div指定不同的key值
+            -->
+        <transition mode="out-in">
+            <div v-if ="show"  key="hrrk">宝宝</div>
+            <div v-else key="b2131">宝宝宝宝</div>
+        </transition>
+        <button @click="handleClick">切换</button>
+    </div>
+</body>
+<script src="../vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            show:true,
+        },
+        methods:{
+            handleClick:function () {
+                this.show = !this.show;
+            }
+        }
+    })
+</script>
+</html>

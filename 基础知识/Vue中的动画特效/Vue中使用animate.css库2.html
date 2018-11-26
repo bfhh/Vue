@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中得css动画原理</title>
+    <link rel="stylesheet" type="text/css" href="../animate.css">
+</head>
+<body>
+<div id="app">
+
+    <!--
+         enter-active-class = "animated bounce" 后面的bounce是animated已经封装好的动画效果，可以去animate官网查看有哪些动画效果
+    -->
+    <transition
+            name="fade"
+            enter-active-class = "animated bounce"
+            leave-active-class = "animated bounceOut"
+    >
+        <div v-show="show">hello world</div>
+    </transition>
+    <button @click="handleClick">切换</button>
+</div>
+</body>
+<script src="../vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            show:true,
+        },
+        methods:{
+            handleClick:function () {
+                this.show = !this.show;
+            }
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js动画</title>
+</head>
+<body>
+
+<!--入场动画钩子 enter
+        before-enter :动画将要执行前调用的函数
+        enter : 动画执行时，一般用done指定动画的结束
+        after-enter:动画执行结束后调用的函数
+    出场动画钩子 leave
+
+    -->
+<div id="app">
+    <transition
+            name="fade"
+            @before-enter="handleBeforeEnter"
+            @enter = "handleEnter"
+            @after-enter = "handleAfterEnter"
+    >
+
+        <div v-if="show">美女</div>
+    </transition>
+    <button @click="handleClick">切换</button>
+</div>
+</body>
+<script src="../vue.js"></script>
+<script src="../volocity.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            show:false
+        },
+        methods:{
+            handleClick:function () {
+                this.show = !this.show;
+            },
+            handleBeforeEnter:function (el) {
+                el.style.opacity = 0;
+            },
+            //el是div元素，done是回调函数
+            handleEnter:function (el,done) {
+                //当Velocity指定的动画效果结束时，Velocity对应的属性complete对应的函数会被执行
+                Velocity(el,{opacity:1},{duration:1000,complete:done});
+                //done是一个回调函数,告诉Vue动画执行完毕
+            },
+            handleAfterEnter:function (el) {
+                alert('动画结束');
+            }
+        }
+    })
+</script>
+</html>

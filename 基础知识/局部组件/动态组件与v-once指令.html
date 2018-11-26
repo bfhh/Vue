@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态组件与v-once指令</title>
+</head>
+<body>
+
+
+    <div id="root">
+         <!--
+            <component>标签是vue自带的一个标签.动态组件
+            :is表示绑定的是哪一个组件.
+         -->
+
+        <component :is="type"></component>
+
+         <!--不用动态组件执行-->
+
+        <!--<child-one v-if="type==='child-one'" ></child-one>-->
+        <!--<child-two v-if="type==='child-two'"></child-two>-->
+        <button @click="handleBtnClick">change</button>
+    </div>
+</body>
+<script src="../vue.js"></script>
+<script>
+
+   //v-once指令 当组件第一次进行展示的时候就会被放到内存中而不是被销毁，
+   //提高性能
+
+    Vue.component('child-one',{
+        template:`<div v-once>chile-one</div>`
+    });
+    Vue.component('child-two',{
+        template:`<div v-once>chile-two</div>`
+    });
+    var vm = new Vue({
+        el:'#root',
+        data:{
+            type:'child-one'
+        },
+        methods:{
+            handleBtnClick:function () {
+                this.type = this.type === 'child-one' ? 'child-two' : 'child-one'
+            }
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中得css动画原理</title>
+    <style>
+        /*
+        transition 包裹的从隐式的状态变为显示的状态的class变化
+        Vue在动画即将被执行的瞬间transition的内部的div上添加 .v-leave ,.v-leave-active 元素
+        第一帧过后会删除v-leave 添加v-leave-to
+        动画结束后会删除.v-enter-active, .v-leave-to
+        */
+
+        .v-enter{
+            opacity:0;
+        }
+        .v-enter-to{}
+        .v-enter-active{
+            transition:opacity 3s;
+        }
+
+        /*
+        transition 包裹的从显示的状态变为隐式的状态的class变化
+        在动画即将被执行的瞬间transition的内部的div上添加 .v-leave ,.v-leave-active 元素
+        动画执行第一帧过后也就是第二针会删除v-leave 添加v-leave-to
+        */
+        .v-leave{}
+        .v-leave-to{
+            opacity: 0;
+        }
+        .v-leave-active{
+            transition: opacity 3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <transition>
+            <div v-if="show">hello world</div>
+        </transition>
+        <button @click="handleClick">切换</button>
+    </div>
+</body>
+<script src="../vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            show:true,
+        },
+        methods:{
+            handleClick:function () {
+                this.show = !this.show;
+            }
+        }
+    })
+</script>
+</html>
