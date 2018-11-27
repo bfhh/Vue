@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d12fd960-4803-48b9-a540-75b8e0777d5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中js动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中keyframes动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中使用animate.css库.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中使用animate.css库3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中多个元素或组件的过渡.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中多个组件的过渡效果.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中多个组件的过渡效果优化.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中的js动画与velocity.js结合.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中的l列表循环.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue的css动画原理.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/volocity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/局部组件/作用域插槽.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/局部组件/动态组件与v-once指令.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/局部组件/插槽.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/局部组件/组件绑定原生事件2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/局部组件/给组件绑定原生事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础知识/局部组件/非父子组件之间的传值.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/基础知识/局部组件/todolist组件化第一课.html" beforeDir="false" afterPath="$PROJECT_DIR$/基础知识/局部组件/todolist组件化第一课.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基础知识/局部组件/局部组件第二课.html" beforeDir="false" afterPath="$PROJECT_DIR$/基础知识/局部组件/局部组件第二课.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基础知识/局部组件/组件进阶_H5bug.html" beforeDir="false" afterPath="$PROJECT_DIR$/基础知识/局部组件/组件进阶_H5bug.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +29,7 @@
     <session id="1168560053">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
+          <entry key="project.closed" value="34" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="8" />
           <entry key="project.open.time.10" value="1" />
@@ -92,7 +70,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="11435" />
+          <entry key="html" value="11504" />
           <entry key="js" value="3" />
           <entry key="php" value="20" />
         </counts>
@@ -100,7 +78,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="11435" />
+          <entry key="HTML" value="11504" />
           <entry key="JavaScript" value="3" />
           <entry key="PHP" value="20" />
         </counts>
@@ -134,8 +112,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中的l列表循环.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="193">
+              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -226,7 +204,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="72" />
     <option name="y" value="61" />
     <option name="width" value="1534" />
@@ -263,12 +241,6 @@
               <item name="Vue" type="462c0819:PsiDirectoryNode" />
               <item name="基础知识" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="基础知识" type="462c0819:PsiDirectoryNode" />
-              <item name="Vue中的动画特效" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -281,7 +253,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543242910813" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543243284108" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -293,7 +265,7 @@
     <property name="node.js.selected.package.tslint" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -363,16 +335,15 @@
       <workItem from="1542866310012" duration="9243000" />
       <workItem from="1542961402873" duration="25000" />
       <workItem from="1542968965539" duration="8731000" />
-      <workItem from="1543241769085" duration="1059000" />
+      <workItem from="1543241769085" duration="1546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62757000" />
+    <option name="totallyTimeSpent" value="63244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4850214" visible="true" weight="0.20911528" />
       <window_info id="Structure" order="1" sideWeight="0.5149786" side_tool="true" weight="0.19369973" />
@@ -793,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中的l列表循环.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="193">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
         </state>
       </provider>
     </entry>
