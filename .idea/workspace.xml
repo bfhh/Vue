@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d12fd960-4803-48b9-a540-75b8e0777d5f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel/src/assets/styles/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel/src/assets/styles/iconfont/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel/src/assets/styles/iconfont/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel/src/assets/styles/iconfont/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel/src/assets/styles/iconfont/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel/src/assets/styles/varibles.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel/build/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/src/pages/home/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/travel/src/pages/home/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/travel/总结.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +39,7 @@
     <session id="1168560053">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="41" />
+          <entry key="project.closed" value="44" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="8" />
           <entry key="project.open.time.10" value="1" />
@@ -36,51 +47,68 @@
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="6" />
           <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.15" value="3" />
+          <entry key="project.open.time.15" value="4" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="3" />
+          <entry key="project.open.time.17" value="4" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="animate" value="1" />
-          <entry key="css" value="4" />
-          <entry key="html" value="125" />
-          <entry key="js" value="11" />
+          <entry key="css" value="9" />
+          <entry key="editorconfig" value="1" />
+          <entry key="gitignore" value="2" />
+          <entry key="html" value="130" />
+          <entry key="js" value="20" />
+          <entry key="json" value="1" />
+          <entry key="md" value="3" />
           <entry key="php" value="1" />
           <entry key="pub" value="1" />
+          <entry key="styl" value="1" />
+          <entry key="vue" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="4" />
-          <entry key="HTML" value="125" />
-          <entry key="JavaScript" value="11" />
+          <entry key="CSS" value="9" />
+          <entry key="HTML" value="130" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="20" />
+          <entry key="Markdown" value="3" />
           <entry key="PHP" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Stylus" value="1" />
+          <entry key="Vue.js" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="html" value="12320" />
-          <entry key="js" value="3" />
+          <entry key="css" value="63" />
+          <entry key="html" value="12397" />
+          <entry key="js" value="371" />
+          <entry key="md" value="1139" />
           <entry key="php" value="20" />
+          <entry key="styl" value="26" />
+          <entry key="vue" value="1037" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="12320" />
-          <entry key="JavaScript" value="3" />
+          <entry key="CSS" value="63" />
+          <entry key="HTML" value="12397" />
+          <entry key="JavaScript" value="371" />
+          <entry key="Markdown" value="1139" />
           <entry key="PHP" value="20" />
+          <entry key="Stylus" value="26" />
+          <entry key="Vue.js" value="1037" />
         </counts>
       </usages-collector>
     </session>
@@ -108,12 +136,64 @@
     <favorites_list name="Vue" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/基础知识/Vue中的动画特效/js的动画封装1.html">
+        <entry file="file://$PROJECT_DIR$/travel/总结.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="444">
+                <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/travel/src/assets/styles/iconfont.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="357">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/travel/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#187#210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/travel/src/pages/home/components/Header.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/travel/build/webpack.base.conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-500">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/travel/src/assets/styles/varibles.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -126,8 +206,17 @@
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>em</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>rem</replace>
+    </replaceStrings>
   </component>
   <component name="GOROOT" path="D:\Download\go" />
   <component name="Git.Settings">
@@ -136,18 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/基础知识/Vue样式绑定/index.html" />
-        <option value="$PROJECT_DIR$/基础知识/Vue样式绑定/index2.html" />
-        <option value="$PROJECT_DIR$/基础知识/Vue样式绑定/index3-style绑定样式.html" />
-        <option value="$PROJECT_DIR$/基础知识/条件判断.html" />
-        <option value="$PROJECT_DIR$/基础知识/条件判断/条件判断2.html" />
-        <option value="$PROJECT_DIR$/基础知识/条件判断/条件判断3.html" />
-        <option value="$PROJECT_DIR$/基础知识/条件判断/条件判断4.html" />
-        <option value="$PROJECT_DIR$/基础知识/列表循环.html" />
-        <option value="$PROJECT_DIR$/基础知识/循环/遍历对象循环.html" />
-        <option value="$PROJECT_DIR$/基础知识/局部组件/组件进阶_子组件定义data.html" />
-        <option value="$PROJECT_DIR$/基础知识/局部组件/组件ref.html" />
-        <option value="$PROJECT_DIR$/基础知识/事件绑定.html" />
         <option value="$PROJECT_DIR$/基础知识/index第一课.html" />
         <option value="$PROJECT_DIR$/基础知识/局部组件/组件练习.html" />
         <option value="$PROJECT_DIR$/基础知识/循环/列表循环.html" />
@@ -185,6 +262,20 @@
         <option value="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中js动画.html" />
         <option value="$PROJECT_DIR$/基础知识/Vue中的动画特效/Vue中keyframes动画.html" />
         <option value="$PROJECT_DIR$/基础知识/Vue中的动画特效/js的动画封装1.html" />
+        <option value="$PROJECT_DIR$/travel/src/App.vue" />
+        <option value="$PROJECT_DIR$/travel/src/pages/list/List.vue" />
+        <option value="$PROJECT_DIR$/travel/index.html" />
+        <option value="$PROJECT_DIR$/travel/src/assets/styles/reset.css" />
+        <option value="$PROJECT_DIR$/travel/package.json" />
+        <option value="$PROJECT_DIR$/travel/src/router/index.js" />
+        <option value="$PROJECT_DIR$/travel/src/pages/home/Home.vue" />
+        <option value="$PROJECT_DIR$/travel/src/assets/styles/iconfont.css" />
+        <option value="$PROJECT_DIR$/travel/src/assets/varibles.styl" />
+        <option value="$PROJECT_DIR$/travel/src/assets/styles/varibles.styl" />
+        <option value="$PROJECT_DIR$/travel/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/travel/src/pages/home/components/Header.vue" />
+        <option value="$PROJECT_DIR$/travel/src/main.js" />
+        <option value="$PROJECT_DIR$/travel/总结.md" />
       </list>
     </option>
   </component>
@@ -206,11 +297,19 @@
       <select />
     </treeState>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/travel/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/travel/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="191" />
-    <option name="y" value="85" />
-    <option name="width" value="1230" />
-    <option name="height" value="775" />
+    <option name="x" value="472" />
+    <option name="y" value="51" />
+    <option name="width" value="985" />
+    <option name="height" value="620" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -241,7 +340,58 @@
             <path>
               <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="基础知识" type="462c0819:PsiDirectoryNode" />
+              <item name="travel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="travel" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="travel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="travel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="travel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="travel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="travel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="travel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,12 +406,12 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543415366327" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543912381923" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../go" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -274,15 +424,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Download\code\Vue\基础知识" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Download\code\Vue\travel\src\assets\styles\iconfont" />
+      <recent name="D:\Download\code\Vue\travel\src\assets\styles" />
+      <recent name="D:\Download\code\Vue" />
       <recent name="D:\Download\code\Vue\基础知识\循环" />
       <recent name="D:\Download\code\Vue\基础知识\条件判断" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Download\code\Vue\travel\src\assets\styles" />
+      <recent name="D:\Download\code\Vue\travel\src\pages" />
+      <recent name="D:\Download\code\Vue\基础知识" />
       <recent name="D:\Download\code\Vue\基础知识\循环" />
       <recent name="D:\Download\code\Vue\基础知识\条件判断" />
-      <recent name="D:\Download\code\Vue\基础知识\Vue样式绑定" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -349,16 +503,30 @@
       <workItem from="1543403921232" duration="6281000" />
       <workItem from="1543414428001" duration="974000" />
       <workItem from="1543578190233" duration="28000" />
+      <workItem from="1543835249804" duration="322000" />
+      <workItem from="1543835620213" duration="6769000" />
+      <workItem from="1543888959232" duration="4329000" />
+      <workItem from="1543908743960" duration="3634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72003000" />
+    <option name="totallyTimeSpent" value="87057000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4850214" visible="true" weight="0.21045576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4850214" visible="true" weight="0.17493297" />
       <window_info id="Structure" order="1" sideWeight="0.5149786" side_tool="true" weight="0.19369973" />
       <window_info id="设计器" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -372,9 +540,9 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952926" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.6533524" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.6291013" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32952926" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32952926" />
       <window_info anchor="right" id="SciView" order="0" />
@@ -390,7 +558,7 @@
       <window_info anchor="right" id="Palette" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4850214" visible="true" weight="0.18900804" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4850214" visible="true" weight="0.211126" />
       <window_info id="Structure" order="1" sideWeight="0.5149786" side_tool="true" weight="0.19369973" />
       <window_info id="设计器" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -399,15 +567,15 @@
       <window_info id="Favorites" order="6" sideWeight="0.50927246" side_tool="true" weight="0.16085792" />
       <window_info id="Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952926" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32952926" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.6291013" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32952926" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32952926" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -459,135 +627,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/基础知识/条件判断/条件判断3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="9" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/条件判断/条件判断.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/Vue样式绑定/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/Vue样式绑定/index3-style绑定样式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/计算属性-方法-侦听器/计算属性-方法-侦听器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1..php" />
-    <entry file="file://$PROJECT_DIR$/基础知识/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/组件练习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/a.html" />
-    <entry file="file://$PROJECT_DIR$/基础知识/Vue样式绑定/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/循环/列表循环.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/模板语法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="16" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/循环/遍历对象循环.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/todolistJquery.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/组件进阶_子组件定义data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/index第一课.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/子组件绑定原生事件.js" />
-    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/子组件向父组件传值.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/给组件绑定原生事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="25" column="36" lean-forward="true" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/基础知识/局部组件/组件绑定原生事件2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/局部组件第四课.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -623,13 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/局部组件第二课.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -775,10 +811,150 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/travel/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/基础知识/Vue中的动画特效/js的动画封装1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/局部组件第四课.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/局部组件第二课.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础知识/局部组件/todolistJquery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/components/HelloWorld.vue" />
+    <entry file="file://$PROJECT_DIR$/travel/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="126">
+            <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/pages/list/List.vue" />
+    <entry file="file://$PROJECT_DIR$/travel/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="123" selection-start-line="4" selection-start-column="123" selection-end-line="4" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/assets/styles/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/assets/styles/border.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-441" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/pages/home/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/assets/styles/varibles.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/assets/styles/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#187#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/src/pages/home/components/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travel/总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="444">
+            <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

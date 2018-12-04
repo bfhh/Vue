@@ -4,9 +4,11 @@ import Vue from 'vue'
 // 没有后缀的现寻找vue,js，json后缀
 import App from './App'
 import router from './router'
-import './assets/styles/reset.css'
+import 'styles/reset.css'
 // 移动端的真正的1px
-import './assets/styles/border.css'
+import 'styles/border.css'
+// 因为每个页面都要引入iconfont
+import 'styles/iconfont.css'
 import fastClick from 'fastclick'
 Vue.config.productionTip = false
 
