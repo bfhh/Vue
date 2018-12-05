@@ -62,3 +62,38 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
                    }
                 }
            },
+
+
+### 将home组件获取的内容传递给其他组件】
+    1.在home组件中判断数据是否获取成功，修改getHomeInfoSucc 函数
+    ```js    
+        getHomeInfoSucc (res) {
+          res = res.data
+          console.log(res)
+          if (res.ret && res.data) {
+            const data = res.data
+            this.city = data.city
+            this.swiperList = data.swiperList
+            this.iconList = data.iconList
+            this.recommendList = data.recommendList
+            this.weekendList = data.weekendList
+          }
+        }
+    ```js
+    
+    2.通过属性给其他组件传值，比如滚动图
+      1.在home组件中定义一个数据
+        data () {
+          return {
+            swiperList: [],
+          }
+        },
+      2. 通过属性给其他组件传值
+        <home-swiper :list="swiperList"></home-swiper>
+        
+    3.在swiper组件中接受获取到的值 这里是list
+       1.接受传过来的list数据，并指定list必须是一个数组
+         props: {
+          list: Array
+         },
+       这样list数据就直接可以在swiper这个组件中使用了  
