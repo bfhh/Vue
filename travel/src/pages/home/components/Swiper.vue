@@ -12,7 +12,6 @@
       <!--<div class="swiper-scrollbar"   slot="scrollbar"></div>-->
     </swiper>
   </div>
-
 </template>
 
 <script>
@@ -24,13 +23,13 @@ export default {
         pagination: '.swiper-pagination',
         loop: true
       },
-      swiperList: [ {
+      swiperList: [{
         id: '001',
         imgUrl: 'http://dimg04.c-ctrip.com/images/700m0y000000m60y3000A_750_150_25.jpg'
       }, {
         id: '002',
         imgUrl: 'http://dimg04.c-ctrip.com/images/700l0y000000lvexk72B5_750_150_25.jpg'
-      } ]
+      }]
     }
   }
 }
