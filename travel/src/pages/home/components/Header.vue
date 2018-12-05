@@ -7,14 +7,17 @@
       <span class="iconfont">&#xe632;</span>
       输入美女/景点/游玩主题</div>
     <div class="header-right">
-      城市
+      {{this.city}}
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 <!--scope保证当前的组建的class样式只对当前组件有效，对其他组件不会产生于影响-->
