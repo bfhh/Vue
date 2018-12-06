@@ -110,3 +110,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   },
   ```
   >  这样list数据就直接可以在swiper这个组件中使用了  
+
+### 开发城市选择页面
+    
