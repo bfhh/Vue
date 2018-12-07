@@ -112,4 +112,182 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   >  这样list数据就直接可以在swiper这个组件中使用了  
 
 ### 开发城市选择页面
+
+和前面的主页面home.vue一样，用一个组件去显示页面，这个组件向外暴露一个name为city的组件，是路由可以找到的组件
+一个页面的各个部分可以拆分由很多的组件组成的页面，city这个组件中引用其他的组件，这样页面的每个功能或者都可以单独在一个组件中开发
+
+* 开发城市页面顶部
+  
+  * 在src/pages/ 创建一个city文件夹 切换到city文件夹下，创建City.vue,这个文件只是一个主页面访问，具体的功能在其他的组件中开发
+  
+  * 在src/pages/ 创建components文件夹
+  
+  * 开发城市页面的顶部
+  ![](https://github.com/golanggo/jpg/blob/master/travel-header.jpg)
+  创建Header.vue,  route-link， to  是vue定义的点击其标签内的内容跳转
+    ```html
+    <div class="header">
+        城市选择
+        <router-link to="/">
+          <div class="iconfont header-back">&#xe624;</div>
+        </router-link>
+    </div>
+    ```
+    城市顶部的样式  
+    ```css
+    .header
+        position: relative
+        overflow: hidden
+        height: $headerHeight
+        line-height: $headerHeight
+        text-align: center
+        color: #fff
+        background: $bgColor
+        font-size: .32rem
+    ```
     
+    返回标签 < 的样式
+    ```css
+    .header-back
+          position: absolute
+          top: 0
+          left: 0
+          width: .64rem
+          text-align: center
+          font-size: .4rem
+          color: #fff
+    ```
+
+    给输入框定义的样式
+    ![]()
+    ```html
+    <template>
+      <div class="search">
+        <input class="search-input" type="text" placeholder="输入城市名字或拼音">
+      </div>
+    </template>
+     ```
+    ```css
+    <style lang="stylus" scoped>
+      @import '~styles/varibles.styl'
+      .search
+        height: .72rem
+        background: $bgColor
+        padding: 0 .1rem
+        .search-input
+          box-sizing: border-box
+          height: 0.62rem
+          width: 100%
+          line-height: 0.62rem
+          text-align: center
+          border-radius: .06rem
+          padding: 0 .2rem
+          color: #666
+     </style>
+    ```  
+    
+    给底部城市列表定义的样式
+    
+      * 页面划分为三个区域 当前城市 热门城市 城市列表，
+      * 每个城市顶部都包含一个title border-topbottom是引入的1px border包含的class,目的是加入1px的标签
+      * button-list是定义一个大的边框控制整体的宽度
+      * button-wrapper是控制大边框内部每个按钮的位置，button是控制单个按钮样式
+      * 热门城市和当前城市的样式一样
+      * 城市列表的样式一样，  
+     
+    ![]() 
+    ```html
+    <template>
+        <div class="list">
+          <div class="area">
+            <div class="title border-topbottom">当前城市</div>
+            <div class="button-list">
+              <div class="button-wrapper">
+                <div class="button">北京</div>
+              </div>
+            </div>
+          </div>
+          <div class="area">
+            <div class="title border-topbottom">热门城市</div>
+            <div class="button-list">
+              <div class="button-wrapper">
+                <div class="button">北京</div>
+              </div>
+              <div class="button-wrapper">
+                <div class="button">北京</div>
+              </div>
+              <div class="button-wrapper">
+                <div class="button">北京</div>
+              </div>
+              <div class="button-wrapper">
+                <div class="button">北京</div>
+              </div>
+            </div>
+          </div>
+          <div class="area">
+            <div class="title border-topbottom">A</div>
+            <div class="item-list">
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+            </div>
+          </div>
+          <div class="area">
+            <div class="title border-topbottom">A</div>
+            <div class="item-list">
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+            </div>
+          </div>
+          <div class="area">
+            <div class="title border-topbottom">A</div>
+            <div class="item-list">
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+              <div class="item border-bottom">阿拉尔</div>
+            </div>
+          </div>
+        </div>
+    </template>
+    ```
+    css 样式
+    ```css
+    .list
+        overflow: hidden
+        position: absolute
+        left: 0
+        top: 1.58rem
+        bottom: 0
+        right: 0
+        .title
+            line-height: .44rem
+            padding-left: .2rem
+            color: #666
+            font-size: .26rem
+            background: #eee
+          .button-list
+            padding: .1rem .4rem .1rem .1rem
+            overflow: hidden
+            .button-wrapper
+              float: left
+              width: 33%
+              .button
+                margin: .1rem
+                padding: .1rem
+                border: .02rem solid #ccc
+                text-align: center
+                border-radius: .06rem
+          .item-list
+            .item
+              line-height: .76rem
+              padding-left: .2rem
+    ```
+  
+   
