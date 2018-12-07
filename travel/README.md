@@ -123,8 +123,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   * 在src/pages/ 创建components文件夹
   
   * 开发城市页面的顶部
+  
   ![](https://github.com/golanggo/jpg/blob/master/travel-header.jpg)
-  创建Header.vue,  route-link， to  是vue定义的点击其标签内的内容跳转
+  
+  创建`Header.vue`,  `route-link`， `to`  是vue定义的点击其标签内的内容跳转
     ```html
     <div class="header">
         城市选择
@@ -159,7 +161,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     ```
 
     给输入框定义的样式
-    ![]()
+    
+    ![](https://github.com/golanggo/jpg/blob/master/travel-city-input.jpg)
+    
     ```html
     <template>
       <div class="search">
@@ -188,14 +192,15 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     
     给底部城市列表定义的样式
     
-      * 页面划分为三个区域 当前城市 热门城市 城市列表，
-      * 每个城市顶部都包含一个title border-topbottom是引入的1px border包含的class,目的是加入1px的标签
-      * button-list是定义一个大的边框控制整体的宽度
-      * button-wrapper是控制大边框内部每个按钮的位置，button是控制单个按钮样式
+      * 页面划分为三个区域 `当前城市` `热门城市` `城市列表`，
+      * 每个城市顶部都包含一个`title` `border-topbottom`是引入的1px border包含的class,目的是加入1px的标签
+      * `button-list`是定义一个大的边框控制整体的宽度
+      * button-wrapper是控制大边框内部每个按钮的位置，`button`是控制单个按钮样式
       * 热门城市和当前城市的样式一样
       * 城市列表的样式一样，  
      
-    ![]() 
+    ![](https://github.com/golanggo/jpg/blob/master/travel-city-list.jpg) 
+    
     ```html
     <template>
         <div class="list">
