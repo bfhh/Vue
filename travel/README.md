@@ -335,9 +335,97 @@ export default {
 
 #### 添加字母表
 
-开发插件Alphabet组件  
+开发Alphabet组件  
 `display: flex flex-direction: column justify-content: center` 让当前元素垂直居中
 
 
+#### 获取真正的城市数据
 
+我们可以通过获取准备好的一组城市数据json文件，在页面dom元素刚刚加载完毕后就获取这个json城市数据，将数据填充到页面中，  
+可以在City.Vue中在dom刚刚加载完毕后发送请求获的这个城市数据，通过属性传值传递给其他各个组件，其他组件通过props接受到 
+数据，在各自组件中循环数据即可
+
+- 将准备好的city.json文件放到static/mock 下
+
+- 修改组件City.vue
+
+```vue
+  <template>
+  ...
+  <!--子组件通诺属性向其他的组件传值-->
+  <city-list :cities="cities" :hot="hotCities"></city-list>
+  <city-alphabet :cities="cities"></city-alphabet>
+  </template>
+  
+  <script>
+  //组件准备的数据,子组件必须通过return的方式定义
+  data () {
+    return {
+      cities: {}, //限制接收到的数据必须是一个对象
+      hotCities: []
+    }
+  },
+  //axios.get('/api/city.json') 会返回一个promise对象
+  methods: {
+    getCityInfo () {
+      axios.get('/api/city.json')
+        .then(this.handleGetCityInfoSucc)
+    },
+    handleGetCityInfoSucc (res) {
+      res = res.data
+      if (res.ret && res.data) {
+        const data = res.data
+        this.cities = data.cities
+        this.hotCities = data.hotCities
+      }
+    }
+  },   
+  //页面文档dom元素刚刚加载完后调用getCityInfo函数
+  mounted () {
+    this.getCityInfo()
+  }
+  </script>
+``` 
+- 修改List.vue
+* list.vue 通过props来接受city.vue传递的数据，props中定义的属性和传递的属性的名称相同，
+* 通过v-for 循环传递的数据，注意v-for循环的位置，v-for所在的元素自身要被循环  
+保证每个v-for 都有一个不同的key值 :key
+
+4.更新 Alphabet.vue   
+* 根据接受到的数据修改字符列表
    
+   
+3.城市列表根据手在字母表上的滑动能够自动根据手指滑动的时候字符的变化来改变城市列表，即要在touchmove事件中触发逻辑
+在字符表上绑定三个事件 touchstart touchmove touchend
+
+data设置一个标志位，默认为false touchstart开始时为真，touchend结束时为假，真正的逻辑在touchmove 
+
+ touchmove根据标志位 math.floor(根据字符A 和当前滑动的位置 相对同一位置的高差)/字符之间的间距  获得一个整数，根据接收到的数据将字母表构造成一个数组  
+数组下标获取当前的字符,向外触发一个change事件，组件City.vue监听到change事件，会将当前的字符传递给list.vue,因为list.vue页面监听到letter的变化，会自动  
+将城市列表显示到当前的页面
+
+- 给当前的字符列表添加 `:ref = "值"` 通过$refs['A']获取当前的dom元素
+  
+- 获取手指触摸点的元素
+```
+e.touches[0]
+```
+- computed()计算属性解释  
+获取当前的字符集的数组，这个要放在computed里面,计算属性通常会依赖一些数据，通过依赖的数据进行计算最终返回值，也就是他要进行逻辑计算，而且计算的性能
+是缓存的，不想用缓存就用函数了
+
+- mounted()属性解释  
+当页面dom树刚刚渲染完成，数据还没有填充时出发的函数
+
+- updated()  
+当页面的dom树和数据渲染完毕后执行的函数
+
+4.性能优化
+因为touchMove这个手指执行的频率过高，通过数据截流的方式来提高性能，也就是把逻辑放在setTimeout()里面
+
+
+
+
+
+
+

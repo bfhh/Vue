@@ -17,13 +17,13 @@
           </div>
         </div>
       </div>
-      <div class="area" v-for="(item, key) of cities" :key="key">
+      <div class="area" v-for="(item, key) of cities" :key="key" :ref="key">
         <div class="title border-topbottom">{{key}}</div>
         <div class="item-list" >
-          <div class="item border-bottom" v-for="innerItem of item" :key="innerItem.id">
-            {{innerItem.name}}
-          </div>
+        <div class="item border-bottom" v-for="innerItem of item" :key="innerItem.id">
+          {{innerItem.name}}
         </div>
+      </div>
       </div>
     </div>
   </div>
@@ -34,10 +34,19 @@ export default {
   name: 'CityList',
   props: {
     cities: Object,
-    hot: Array
+    hot: Array,
+    letter: String
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
+  },
+  watch: {
+    letter () {
+      // 一般情况下可以通过this.$refs[值]获取当前的dom元素,但是这里因为ref是位于一个循环的,this.$refs[this.letter是一个数组
+      const element = this.$refs[this.letter][0]
+      // 利用Bscroll这个插件，传入一个dom元素就会自动滚动到该元素
+      this.scroll.scrollToElement(element)
+    }
   }
 }
 </script>
